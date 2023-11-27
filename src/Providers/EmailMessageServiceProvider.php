@@ -1,10 +1,10 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog\Providers;
+namespace Hrnicek\FilamentEmailLog\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider;
 use Illuminate\Mail\Events\MessageSent;
-use Ramnzys\FilamentEmailLog\Listeners\FilamentEmailLogger;
+use Hrnicek\FilamentEmailLog\Listeners\FilamentEmailLogger;
 
 class EmailMessageServiceProvider extends EventServiceProvider
 {

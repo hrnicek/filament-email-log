@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog\Tests;
+namespace Hrnicek\FilamentEmailLog\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -13,9 +13,9 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Ramnzys\FilamentEmailLog\FilamentEmailLogServiceProvider;
-use Ramnzys\FilamentEmailLog\Providers\EmailMessageServiceProvider;
-use Ramnzys\FilamentEmailLog\Tests\Models\User;
+use Hrnicek\FilamentEmailLog\FilamentEmailLogServiceProvider;
+use Hrnicek\FilamentEmailLog\Providers\EmailMessageServiceProvider;
+use Hrnicek\FilamentEmailLog\Tests\Models\User;
 
 class TestCase extends Orchestra
 {
@@ -28,7 +28,7 @@ class TestCase extends Orchestra
         $this->setUpDatabase($this->app);
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Ramnzys\\FilamentEmailLog\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Hrnicek\\FilamentEmailLog\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -58,10 +58,10 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        $migration = include __DIR__.'/../database/migrations/create_filament_email_log_table.php.stub';
+        $migration = include __DIR__ . '/../database/migrations/create_filament_email_log_table.php.stub';
         $migration->up();
 
-        $migration = include __DIR__.'/../database/migrations/add_raw_and_debug_fields_to_filament_email_log_table.php.stub';
+        $migration = include __DIR__ . '/../database/migrations/add_raw_and_debug_fields_to_filament_email_log_table.php.stub';
         $migration->up();
     }
 

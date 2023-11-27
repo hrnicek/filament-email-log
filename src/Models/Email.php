@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog\Models;
+namespace Hrnicek\FilamentEmailLog\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

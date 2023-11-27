@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog\Filament\Resources;
+namespace Hrnicek\FilamentEmailLog\Filament\Resources;
 
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\Tabs;
@@ -13,9 +13,9 @@ use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Config;
-use Ramnzys\FilamentEmailLog\Filament\Resources\EmailResource\Pages\ListEmails;
-use Ramnzys\FilamentEmailLog\Filament\Resources\EmailResource\Pages\ViewEmail;
-use Ramnzys\FilamentEmailLog\Models\Email;
+use Hrnicek\FilamentEmailLog\Filament\Resources\EmailResource\Pages\ListEmails;
+use Hrnicek\FilamentEmailLog\Filament\Resources\EmailResource\Pages\ViewEmail;
+use Hrnicek\FilamentEmailLog\Models\Email;
 
 class EmailResource extends Resource
 {

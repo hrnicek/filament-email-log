@@ -1,5 +1,5 @@
 <?php
 
-use Ramnzys\FilamentEmailLog\Tests\TestCase;
+use Hrnicek\FilamentEmailLog\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

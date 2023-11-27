@@ -1,10 +1,10 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog;
+namespace Hrnicek\FilamentEmailLog;
 
 use Filament\PluginServiceProvider;
-use Ramnzys\FilamentEmailLog\Filament\Resources\EmailResource;
-use Ramnzys\FilamentEmailLog\Providers\EmailMessageServiceProvider;
+use Hrnicek\FilamentEmailLog\Filament\Resources\EmailResource;
+use Hrnicek\FilamentEmailLog\Providers\EmailMessageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
 class FilamentEmailLogServiceProvider extends PluginServiceProvider

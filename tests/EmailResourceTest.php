@@ -8,8 +8,8 @@ use function Pest\Laravel\artisan;
 use function Pest\Laravel\assertDatabaseHas;
 use function Pest\Laravel\assertDatabaseMissing;
 use function Pest\Laravel\travel;
-use Ramnzys\FilamentEmailLog\Filament\Resources\EmailResource;
-use Ramnzys\FilamentEmailLog\Models\Email;
+use Hrnicek\FilamentEmailLog\Filament\Resources\EmailResource;
+use Hrnicek\FilamentEmailLog\Models\Email;
 
 it('redirects on non logged users', function () {
     $this->get(Config::get('filament.path'))
@@ -60,7 +60,7 @@ it('can purge old emails', function () {
     travel(Config::get('filament-email-log.keep_email_for_days'))->days();
 
     artisan('model:prune', [
-        '--model' => 'Ramnzys\FilamentEmailLog\Models\Email',
+        '--model' => 'Hrnicek\FilamentEmailLog\Models\Email',
     ]);
 
     assertDatabaseMissing(Email::class, [

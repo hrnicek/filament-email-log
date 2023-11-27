@@ -1,8 +1,8 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog\Listeners;
+namespace Hrnicek\FilamentEmailLog\Listeners;
 
-use Ramnzys\FilamentEmailLog\Models\Email;
+use Hrnicek\FilamentEmailLog\Models\Email;
 
 class FilamentEmailLogger
 {
@@ -45,7 +45,7 @@ class FilamentEmailLogger
         return implode(
             ',',
             array_map(function ($email) {
-                return "{$email->getAddress()}".($email->getName() ? " <{$email->getName()}>" : '');
+                return "{$email->getAddress()}" . ($email->getName() ? " <{$email->getName()}>" : '');
             }, $recipients)
         );
     }

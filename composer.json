@@ -1,5 +1,5 @@
 {
-    "name": "ramnzys/filament-email-log",
+    "name": "hrnicek/filament-email-log",
     "description": "This package provides a Filament resource to view all Laravel outgoing emails.",
     "license": "MIT",
     "keywords": [
@@ -42,13 +42,13 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ramnzys\\FilamentEmailLog\\": "src",
-            "Ramnzys\\FilamentEmailLog\\Database\\Factories\\": "database/factories"
+            "Hrnicek\\FilamentEmailLog\\": "src",
+            "Hrnicek\\FilamentEmailLog\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ramnzys\\FilamentEmailLog\\Tests\\": "tests"
+            "Hrnicek\\FilamentEmailLog\\Tests\\": "tests"
         }
     },
     "config": {
@@ -58,10 +58,10 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "FilamentEmailLog": "Ramnzys\\FilamentEmailLog\\Facades\\FilamentEmailLog"
+                "FilamentEmailLog": "Hrnicek\\FilamentEmailLog\\Facades\\FilamentEmailLog"
             },
             "providers": [
-                "Ramnzys\\FilamentEmailLog\\FilamentEmailLogServiceProvider"
+                "Hrnicek\\FilamentEmailLog\\FilamentEmailLogServiceProvider"
             ]
         }
     },

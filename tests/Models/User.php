@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramnzys\FilamentEmailLog\Tests\Models;
+namespace Hrnicek\FilamentEmailLog\Tests\Models;
 
 use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Auth\Authenticatable;
